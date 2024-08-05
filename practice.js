@@ -93,7 +93,15 @@ function addToCart(item, quantity) {
   Return the updated object.
 */
 
-//Code Here
+function greaterThan10(Object) {
+  let newObj = Object;
+  for (const num in newObj) {
+    if (newObj[num] > 10) {
+      newObj[num] = 0;
+    }
+  }
+  return newObj;
+} 
 
 /// ////////////// PROBLEM 6 ///////////////////
 
