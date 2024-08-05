@@ -68,7 +68,8 @@ const user2 = {
   Make that change without editing the code above.
 */
 
-//Code Here
+user2.name = "Bryan G. Smith";
+user2.email = "bryan.smith@devmounta.in";
 
 /// ////////////// PROBLEM 4 ///////////////////
 
@@ -79,7 +80,10 @@ let shoppingCart = {};
   It should add a new key-value pair to the cart with the item and quantity.
 */
 
-//Code Here
+function addToCart(item, quantity) {
+  shoppingCart[item] = quantity;
+  return shoppingCart;
+}
 
 /// ////////////// PROBLEM 5 ///////////////////
 
