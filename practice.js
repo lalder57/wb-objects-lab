@@ -342,8 +342,8 @@ const cat = {
 */
 
 //Code Here
-let grumpyActivity = cat[catFriends][activities][1];
-let fluffy2ndFriend = cat[catFriends][name];
+let grumpyActivity = cat.catFriends[0].activities[1];
+let fluffy2ndFriend = cat.catFriends[1].name;
 
 /// ////////////// PROBLEM 17 ///////////////////
 
@@ -381,7 +381,14 @@ const myCar = {
     3. Change atFaultForAccident from true to false.
 */
 
-//Code Here
+function recordCleaner() {
+  for (let i = 0; i < myCar.accidents.length; i++) {
+    if (myCar.accidents[i].atFaultForAccident === true) {
+      myCar.accidents[i].atFaultForAccident = false
+    }
+  }
+  return myCar;
+}
 
 /// ////////////// PROBLEM 18 ///////////////////
 
