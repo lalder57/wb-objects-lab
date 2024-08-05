@@ -93,8 +93,8 @@ function addToCart(item, quantity) {
   Return the updated object.
 */
 
-function greaterThan10(Object) {
-  let newObj = Object;
+function greaterThan10(object) {
+  let newObj = object;
   for (const num in newObj) {
     if (newObj[num] > 10) {
       newObj[num] = 0;
@@ -111,7 +111,13 @@ function greaterThan10(Object) {
   Return the updated object.
 */
 
-//Code Here
+function double(object) {
+  let newObj = object;
+  for (const num in newObj) {
+      newObj[num] = newObj[num] * 2;
+  }
+  return newObj;
+} 
 
 /// ////////////// PROBLEM 7 ///////////////////
 
